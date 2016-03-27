@@ -1,4 +1,0 @@
-services:
-#    slow_prog_spark_post_swift_mailer.example:
-#        class: SlowProg\Bundle\SparkPostSwiftMailerBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
