@@ -4,22 +4,17 @@
     "keywords": ["sparkpost", "swiftmailer", "symfony", "bundle"],
     "homepage": "https://github.com/SlowProg/SparkPostSwiftMailerBundle",
     "type": "symfony-bundle",
-    "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "James Rattue",
-            "email": "james.rattue@accordgroup.co.uk"
-        },
-        {
-            "name": "James Willans",
-            "email": "james.willans@accordgroup.co.uk"
+            "name": "Andrey Tyshev",
+            "email": "slowprog@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.4",
         "symfony/framework-bundle": ">=2.3",
         "symfony/swiftmailer-bundle": ">=2.3",
-        "accord/mandrill-swiftmailer": ">=1.0.2",
+        "slowprog/sparkpost-swiftmailer": "dev-master",
         "swiftmailer/swiftmailer": "~5.3"
     },
     "require-dev": {
@@ -28,12 +23,7 @@
         "symfony/config": ">=2.3"
     },
     "autoload": {
-        "psr-0": { "Accord\\MandrillSwiftMailerBundle": "" }
+        "psr-0": { "SlowProg\\SparkPostSwiftMailerBundle": "" }
     },
-    "target-dir": "Accord/MandrillSwiftMailerBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.2.x-dev"
-        }
-    }
+    "target-dir": "SlowProg/SparkPostSwiftMailerBundle"
 }
