@@ -21,6 +21,7 @@
         "symfony/framework-bundle": ">=2.3",
         "symfony/swiftmailer-bundle": ">=2.3",
         "slowprog/sparkpost-swiftmailer": "dev-master",
+        "guzzlehttp/guzzle": "^6.2",
         "swiftmailer/swiftmailer": "~5.3"
     },
     "require-dev": {
