@@ -1,6 +1,6 @@
 <?php
 
-namespace SlowProg\Bundle\SparkPostSwiftMailerBundle;
+namespace SlowProg\SparkPostSwiftMailerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

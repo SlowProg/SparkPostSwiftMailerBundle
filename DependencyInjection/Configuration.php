@@ -1,6 +1,6 @@
 <?php
 
-namespace SlowProg\Bundle\SparkPostSwiftMailerBundle\DependencyInjection;
+namespace SlowProg\SparkPostSwiftMailerBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -19,6 +19,11 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('slow_prog_spark_post_swift_mailer');
+        $rootNode
+            ->children()
+                ->scalarNode('api_key')->isRequired()->end()
+            ->end()
+        ;
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

@@ -1,6 +1,6 @@
 <?php
 
-namespace SlowProg\Bundle\SparkPostSwiftMailerBundle\DependencyInjection;
+namespace SlowProg\SparkPostSwiftMailerBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -24,5 +24,9 @@ class SlowProgSparkPostSwiftMailerExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+        
+        $transportDefinition = $container->getDefinition('swiftmailer.mailer.transport.slowprog_sparkpost');
+        $transportDefinition->addMethodCall('setApiKey', array( $config['api_key'] ));
+        $container->setAlias('slowprog_sparkpost', 'swiftmailer.mailer.transport.slowprog_sparkpost');
     }
 }
