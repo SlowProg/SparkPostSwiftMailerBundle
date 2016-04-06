@@ -10,6 +10,12 @@
             "email": "slowprog@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type" : "vcs",
+            "url" : "https://github.com/SlowProg/SparkPostSwiftMailer.git"
+        }
+    ],
     "require": {
         "php": ">=5.4",
         "symfony/framework-bundle": ">=2.3",
